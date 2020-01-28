@@ -1,18 +1,26 @@
 import time
 from scraper import scraper
-
+from database import database
 
 #bot = ai.Bot(do_logout=True)
 #bot = ai.Bot()
 #bot.api.login(username=ig_username, password=ig_password, is_threaded=True, use_cookie=True)
 #time.sleep(2)
+db = database.Database()
 
 class webcreator(object):
 
-    def multi_user_poster(profiles):
+    def __init__(self):
+        pass
+
+    def start(self, profile):
+        db.create_profile(profile)
+        scraper.Scraper.ig_photo_and_video_scraper(profile)
+
+    def multi_user_poster(self, profiles):
         for profile in profiles:
             try:
-                user_id = scraper.Scraper.scrape_user_id(profile)
+                user_id = scraper.bot.get_user_id_from_username(profile)
                 followers = scraper.bot.get_user_following(user_id)
                 print(followers)
                 for follower in followers:
@@ -27,7 +35,7 @@ class webcreator(object):
                         print("it's over 10.000")
                         print(str(follow_count))
                         user = scraper.bot.get_username_from_user_id(follower)
-                        start(user)
+                        self.start(user)
                     else:
                         print("not over 5000")
                         print(str(follow_count))
