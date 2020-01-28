@@ -1,4 +1,4 @@
 from webcreator import websitecreator
 
-
-websitecreator.webcreator.multi_user_poster("maskofshiva")
+create_website = websitecreator.webcreator()
+create_website.multi_user_poster("maskofshiva")
