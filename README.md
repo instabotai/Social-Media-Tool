@@ -1,11 +1,12 @@
 # Social Media Tool
 <p>
 
-Requriements: 
-Python3
+Requriements:<p>
+Python3<p>
 php/mysql
 
 ## How to run the program
 <p>
-edit webcreator/config.py
-run in cmd python3 test.py
+edit webcreator/config.py<p>
+run in cmd <p>
+python3 test.py
