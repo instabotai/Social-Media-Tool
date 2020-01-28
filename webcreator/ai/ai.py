@@ -1,14 +1,13 @@
+"""
+This scraper is created by steffan jensen.
+Copyright 2020 - All rights reserved
+"""
 from __future__ import unicode_literals
 import time
 from webcreator import 
-#from ..mtcnn.mtcnn import MTCNN
-#from ..mtcnn.mtcnn import MTCNN
 import sys
 import os
-#sys.path.append(os.path.join(sys.path[0], "/home/steffan/devenv/webcreator/"))
 sys.path.append(os.path.join(sys.path[0], "./webcreator/"))
-# sys.path.append('..')   #path to directory that contains outdir
-print(sys.path)
 from mtcnn.mtcnn import MTCNN
 import cv2
 from ..instabotai import ai
@@ -36,7 +35,6 @@ class Ai(object):
 
         start = time.time()
         path = str(path)
-#        img = cv2.imread(path)
         img = cv2.cvtColor(cv2.imread(path), cv2.COLOR_BGR2RGB)
         scale_percent = 10  # percent of original size
         width = int(img.shape[1] * scale_percent / 100)
