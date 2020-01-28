@@ -19,7 +19,7 @@ class Database(object):
     def __init__(self):
         # Test if it works
         self.host = db_host
-        self.user = db_username
+        self.username = db_username
         self.passwd = db_password
         self.db_name = db_name
 
@@ -30,7 +30,7 @@ class Database(object):
     def create_profile(self, user):
         try:
             db = MySQLdb.connect(host=self.host, user=self.username, passwd=self.passwd, db=self.db_name)
-            user_id = webscraper.scrape_user_id(user)
+            user_id = scraper.bot.get_user_id_from_username(user)
             ig_url = "http://www.instagram.com/@" + user
             user_info = scraper.bot.get_user_info(user_id)
             try:
