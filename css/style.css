@@ -1,0 +1,40 @@
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+h1 { color: #000000; font-family: 'Raleway',sans-serif; font-size: 22px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+		#container .grid li { float: left; width: 150px; height: 150px; border-right: 1px dotted #CCC; border-bottom: 1px dotted #CCC; padding: 10px; }
+
+
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) { /* STYLES GO HERE */
+h1 { color: #000000; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+		#container .grid li { float: left; width: 150px; height: 150px; border-right: 1px dotted #CCC; border-bottom: 1px dotted #CCC; padding: 10px; }
+
+
+ }
+
+
+				#container ul { list-style: none; margin:0; padding:0;}
+		#container .buttons { margin-bottom: 20px; }
+		#container .list li { width: 100%; border-bottom: 1px dotted #CCC; margin-bottom: 10px; padding-bottom: 10px; }
+		#container .grid li { float: left; width: 10%; height: 200px; border-right: 1px dotted #CCC; border-bottom: 1px dotted #CCC; padding: 10px; }
+		.acc{margin-top:3px; border:1px solid #ddd; display:block; padding:5px;}
+		.h{display:none;}
+        #container .profile_pic{border-radius:180px;margin-left: 20px; margin-top: -20px;  
+	border:1px solid #fff;
+    -moz-box-shadow: 0px 6px 5px #ccc;
+  -webkit-box-shadow: 0px 6px 5px #ccc;
+  box-shadow: 0px 6px 5px #ccc;
+  -moz-border-radius:190px;
+  -webkit-border-radius:190px;}
+        #container .username{font-size:14px; color: black; outline: none; text-decoration: none;margin-left: 15px;}
+		.v{display:block;}
+h1 { color: #000000; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+a {
+  text-decoration: none !important; 
+}
